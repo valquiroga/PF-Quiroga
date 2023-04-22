@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;}
+
+    body {
+    background-color: #f5f5f7;
+    font-family: 'Lato', sans-serif;
+    color: #212121;}
+
+header {
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+    background-color: #bbbbbb;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__logo {
+    width: 130px;
+padding: 10%;}
+
+ul{
+    list-style: none;}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+h1 {
+    text-align: center;
+    position: sticky;
+    top: 30px;
+padding: 1%;}
+
+.subtitulo {
+    font-weight: 400;
+    text-align: center;
+    padding: 5%;
+}
+
+p {
+    text-align: center;
+    padding: 1%;
+}
+
+.banner__inicio {
+    background-image: url(../imagenes/ofi\ 2\ .jpg);
+    height: 580px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner__servicios {
+    background-image: url(../imagenes/monitoreo.jpg);
+    height: 580px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner__sobreloar {
+    background-image: url(../imagenes/team2.png);
+    height: 580px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner__trabaja {
+    background-image: url(../imagenes/team.jpg);
+    height: 580px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner__contacto {
+    background-image: url(../imagenes/team3.jpg);
+    height: 580px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.padre-cards {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+}
+
+.card {
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.card button {
+    border: none;
+    background-color: #c9c9c9;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    color: #212121;
+border-radius: 20px;}
+
+.card button a:hover {
+    color: #f5f5f7;
+}
+
+.card button:hover {
+    background-color: #de4f49;
+}
+
+.arriba {
+    width: 50px;
+    position: absolute;
+    left: 90%;
+    bottom: 100%;
+
+}
+
+.nuevo {
+
+    position: absolute;
+    top: 7%;
+    left: 80%;
+    background-color: #de4f49;
+    color: #f5f5f7;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.nav-link:hover {
+    color: #de4f49;
+}
+
+
+.tel { 
+    display: flex;
+    gap: 10px; 
+    align-items: center;}
+
+.mail { 
+    display: flex;
+    gap: 10px;
+    align-items: center;}
+
+.pin{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.redes{
+    gap: 10px;
+}
+
+
+
+footer {   background-color: rgb(235, 83, 83);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    font-size: smaller;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {    
+    footer {   background-color: rgb(235, 83, 83);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    font-size: smaller;
+    margin-top: 20px;
+    padding: 10px;
+}}
+
+footer img{ width: 25px;}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.eslogan {
+    text-decoration: underline;
+font-weight: 700;
+font-style: italic;
+}
+
+.carousel-caption  { 
+    background-color: #f5f5f78a;
+    max-width: 50%;
+    margin: 0 auto;}
+
+@media (min-width: 992px) {
+    #carouselExampleDark img {
+        max-width: 50%;
+        margin: 0 auto;}
+
+}
+
+
+
