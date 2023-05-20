@@ -5,14 +5,124 @@
     padding: 0;}
 
     body {
-    background-color: #f5f5f7;
-    font-family: 'Lato', sans-serif;
-    color: #212121;}
+    background-color: $color-fondos;
+    font-family: $fuente-principal;
+    color: $color-letras;}
 
 a {
     text-decoration: none;
     color: #212121;
 }
+
+/*header*/
+
+header {
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+    background-color: #bbbbbb;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+    align-items: right;
+    background-image: linear-gradient(to bottom, #bbbbbb, #f5f5f7);
+}
+
+.header__logo {
+    width: 130px;
+padding: 10%;
+margin-left: 10%;
+}
+
+.navbar {
+    color: $color-letras;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right; 
+    a{&:hover{ color: #de4f49;
+        font-weight: bolder;transition: all 0.7s;}}
+
+}
+
+
+.navbar-nav .nav-link.active {
+    color: $color-rojo;
+}
+
+@media (min-width: 768px) {.navbar {padding-left: 45%;
+text-align: center;
+justify-content: space-evenly;}} 
+
+@media (min-width: 768px) {.header__logo { margin-left: 70%;}}
+
+/*footer*/
+
+.tel { 
+    display: flex;
+    gap: 10px; 
+    align-items: center;}
+
+.mail { 
+    display: flex;
+    gap: 10px;
+    align-items: center;}
+
+.pin{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer a {color: white;}
+
+.direc {text-align: left;}
+
+footer {   background-color: rgb(235, 83, 83);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    text-align: left;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    font-size: smaller;
+    margin-top: 20px;
+    padding: 10px;
+    overflow: visible;
+}
+
+@media (min-width: 768px) {    
+    footer {   background-color: rgb(235, 83, 83);
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 0;
+    font-size: smaller;
+    margin-top: 20px;
+    overflow: visible;
+    text-align: center;
+}}
+
+footer img{ width: 25px;}
+
+.eslogan {
+    text-decoration: underline;
+font-weight: 700;
+font-style: italic;
+}
+
+
 
 /*Estilo de titulos*/
 h1 {
@@ -32,27 +142,16 @@ p {
     padding: 1%;
 }
 
+
 /*Estilo de banners*/
 .banner__inicio {
-    background-image: url(../imagenes/ofi\ 2\ .jpg);
+    background-image: url(../imagenes/ofi\ 6.jpg);
     height: 580px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-@media (min-width: 768px) {    
-    .banner__inicio {   background-color: rgb(235, 83, 83);
-    color: white;
-    flex-direction: row;
-    justify-content: space-around;
-    top: 0;
-    font-size: smaller;
-    margin-top: 20px;
-    overflow: visible;
-    text-align: center;
-}}
 
 .banner__servicios {
     background-image: url(../imagenes/monitoreo.jpg);
