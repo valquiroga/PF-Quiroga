@@ -266,7 +266,7 @@ p {
 
 /*Estilo de banners*/
 .banner__inicio {
-  background-image: url(../imagenes/ofi\ 2\ .jpg);
+  background-image: url(../imagenes/ofi\ 6.jpg);
   height: 580px;
   width: 100%;
   background-size: cover;
@@ -280,7 +280,7 @@ p {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
 }
 
 .banner__sobreloar {
@@ -293,7 +293,7 @@ p {
 }
 
 .banner__trabaja {
-  background-image: url(../imagenes/team.jpg);
+  background-image: url(../imagenes/team\ 4.jpg);
   height: 580px;
   width: 100%;
   background-size: cover;

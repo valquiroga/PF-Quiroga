@@ -42,6 +42,18 @@ p {
     background-attachment: fixed;
 }
 
+@media (min-width: 768px) {    
+    .banner__inicio {   background-color: rgb(235, 83, 83);
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 0;
+    font-size: smaller;
+    margin-top: 20px;
+    overflow: visible;
+    text-align: center;
+}}
+
 .banner__servicios {
     background-image: url(../imagenes/monitoreo.jpg);
     height: 580px;
