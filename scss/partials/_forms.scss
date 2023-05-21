@@ -1,12 +1,9 @@
 
 form {padding: 3%;}
-.btn {color: #010101;
-background-color:#c9c9c9;
-border: none;
-&:hover{ background-color: #de4f49;}
-a{&:hover{color: f5f5f7;}}}
+.btn {@include button}
 
 .experiencia {text-align: left;}
+
 .trabaja {padding: 1%;}
 
 .button {padding: 2% 0% 0% 0% }

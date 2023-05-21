@@ -11,7 +11,7 @@
 
 a {
     text-decoration: none;
-    color: #212121;
+    color: $color-letras;
 }
 
 /*header*/
@@ -20,14 +20,15 @@ header {
     position: sticky; 
     top: 0;
     z-index: 1;
-    background-color: #bbbbbb;
+    background-color: $color-gradientes;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: right;
     align-items: right;
-    background-image: linear-gradient(to bottom, #bbbbbb, #f5f5f7);
+    background-image: linear-gradient(to bottom, $color-gradientes, $color-blanco)
+    ;
 }
 
 .header__logo {
@@ -43,15 +44,13 @@ margin-left: 10%;
     flex-direction: row;
     align-items: center;
     text-align: right; 
-    a{&:hover{ color: #de4f49;
+    a{&:hover {color:$color-rojo;
         font-weight: bolder;transition: all 0.7s;}}
-
 }
 
 
 .navbar-nav .nav-link.active {
-    color: $color-rojo;
-}
+    color: $color-rojo;}
 
 @media (min-width: 768px) {.navbar {padding-left: 45%;
 text-align: center;
@@ -62,33 +61,27 @@ justify-content: space-evenly;}}
 /*footer*/
 
 .tel { 
-    display: flex;
-    gap: 10px; 
-    align-items: center;}
+    @include flex-center;
+    gap: 10px;}
 
 .mail { 
-    display: flex;
-    gap: 10px;
-    align-items: center;}
+    @include flex-center;
+    gap: 10px;}
 
 .pin{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+    @include flex-center;
+    gap: 10px;}
 
 .redes {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+    @include flex-center;
+    gap: 10px;}
 
-footer a {color: white;}
+footer a {color: $color-blanco;}
 
 .direc {text-align: left;}
 
-footer {   background-color: rgb(235, 83, 83);
-    color: white;
+footer {   background-color: $color-letras;
+    color: $color-blanco;
     display: flex;
     justify-content: space-evenly;
     align-items: left;
@@ -103,8 +96,8 @@ footer {   background-color: rgb(235, 83, 83);
 }
 
 @media (min-width: 768px) {    
-    footer {   background-color: rgb(235, 83, 83);
-    color: white;
+    footer { background-color: $color-letras;
+    color: $color-blanco;
     flex-direction: row;
     justify-content: space-around;
     top: 0;
@@ -113,6 +106,7 @@ footer {   background-color: rgb(235, 83, 83);
     overflow: visible;
     text-align: center;
 }}
+
 
 footer img{ width: 25px;}
 
@@ -139,54 +133,34 @@ padding: 1%;}
 
 p {
     text-align: center;
-    padding: 1%;
-}
+    padding: 1%;}
 
 
 /*Estilo de banners*/
 .banner__inicio {
     background-image: url(../imagenes/ofi\ 6.jpg);
-    height: 580px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @include banner;
+
 }
 
 .banner__servicios {
     background-image: url(../imagenes/monitoreo.jpg);
-    height: 580px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @include banner;
 }
 
 .banner__sobreloar {
     background-image: url(../imagenes/team2.png);
-    height: 580px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @include banner;
 }
 
 .banner__trabaja {
     background-image: url(../imagenes/team.jpg);
-    height: 580px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @include banner;
 }
 
 .banner__contacto {
     background-image: url(../imagenes/team3.jpg);
-    height: 580px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @include banner;
 }
 
 /*Estilo de carousel*/
@@ -209,6 +183,5 @@ p {
 /*fondos*/
 
 .gradientes {
-    background-image: linear-gradient(to bottom,#f5f5f7, #f5f5f78a, #5050538a,);
-}
+    background-image: linear-gradient(to bottom,$color-blanco, $color-gradientes, #5050538a,);}
 
