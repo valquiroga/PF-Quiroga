@@ -82,11 +82,10 @@ footer a {color: $color-blanco;}
 
 footer {   background-color: $color-letras;
     color: $color-blanco;
-    display: flex;
+    @include flex-column;
     justify-content: space-evenly;
     align-items: left;
     text-align: left;
-    flex-direction: column;
     position: sticky;
     top: 0;
     font-size: smaller;
@@ -183,5 +182,5 @@ p {
 /*fondos*/
 
 .gradientes {
-    background-image: linear-gradient(to bottom,$color-blanco, $color-gradientes, #5050538a,);}
+    background-image: linear-gradient(to bottom,$color-blanco, $color-gradientes, #4e4d4d8a,);}
 

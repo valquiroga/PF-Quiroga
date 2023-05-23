@@ -11,23 +11,6 @@ $color-gradientes:#bbbbbb;
 
 $fuente-principal: "Lato", sans-serif;
 
-/*Tamaños de fuentes*/
-
-$fuente-chica: 14px;
-$fuente-media: 20px;
-$fuente-grande: 40px;
-
-/*Tamaños de iconos*/
-
-$icono-chico: 40px;
-$icono-medio: 60px;
-$icono-grande: 120px;
-
-/*Separaciones*/
-
-$espacios-chicos: 10px;
-$espacios-medios: 40px;
-$espacios-grandes: 60px;
 
 /*MIXINS*/
 
@@ -53,3 +36,26 @@ $espacios-grandes: 60px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Tamaños de fuentes*/
+
+$fuente-chica: 14px;
+$fuente-media: 20px;
+$fuente-grande: 40px;
+
+/*Tamaños de iconos*/
+
+$icono-chico: 40px;
+$icono-medio: 60px;
+$icono-grande: 120px;
+
+/*Separaciones*/
+
+$espacios-chicos: 10px;
+$espacios-medios: 40px;
+$espacios-grandes: 60px;
