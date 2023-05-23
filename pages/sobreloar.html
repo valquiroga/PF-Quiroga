@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="description" content="
     Proteja su hogar o negocio con nuestros servicios de seguridad privada. Ofrecemos soluciones integrales, desde sistemas de vigilancia hasta protección personal. Confíe en nosotros para proteger lo que más le importa. Contáctenos hoy mismo para más información.">
     <meta name="keywords" content="Servicios de seguridad privada, monitoreo,Seguridad armada, Vigilancia, CCTV, Alarmas, Monitoreo, Seguridad privada">
@@ -53,14 +54,20 @@
     </header>
     <div class="banner__sobreloar"></div>
     <section class="container">
+        <div data-aos="fade-right" >
         <h1>SOBRE NOSOTROS</h1>
         <p>Nos enorgullece brindar soluciones integrales y confiables para proteger a nuestros clientes y sus activos. Con una vasta experiencia en el campo de la seguridad, nos hemos convertido en líderes reconocidos en el sector. Nuestro compromiso es ofrecer servicios de alta calidad y adaptados a las necesidades específicas de cada cliente.
         </p>
-        <h2 class="subtitulo"> VALORES</h2>
+    </div>
+    <div data-aos="fade-left">
+        <h2  class="subtitulo"> VALORES</h2>
         <P>En nuestra compañía, nos regimos por principios fundamentales. La integridad, la profesionalidad y la responsabilidad son los pilares en los que basamos nuestro trabajo diario. Nos esforzamos por brindar un servicio ético y transparente, siempre priorizando la seguridad y el bienestar de nuestros clientes.</P>
+    </div>
+    <div data-aos="fade-right"> 
         <h2 class="subtitulo">ESTRATEGIA</h2>
+        
         <p>Nuestra estrategia se basa en la adaptabilidad y la innovación constante. Utilizamos tecnologías de vanguardia y seguimos las mejores prácticas del sector para ofrecer soluciones de seguridad eficientes y personalizadas. Nos enfocamos en establecer relaciones sólidas con nuestros clientes y colaboradores, con el objetivo de proporcionarles tranquilidad y protección en todo momento.</p>
-
+    </div>
     </section>
     <!--Pie de página-->
     <footer>
@@ -83,5 +90,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init();</script>
 </body>
 </html>

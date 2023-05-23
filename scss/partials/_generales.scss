@@ -1,5 +1,6 @@
 
 /*Estilo de textos*/
+
 *{
     margin: 0;
     padding: 0;}
@@ -118,6 +119,7 @@ font-style: italic;
 
 
 /*Estilo de titulos*/
+
 h1 {
     text-align: center;
     position: sticky;
@@ -134,8 +136,8 @@ p {
     text-align: center;
     padding: 1%;}
 
-
 /*Estilo de banners*/
+
 .banner__inicio {
     background-image: url(../imagenes/ofi\ 6.jpg);
     @include banner;
@@ -163,6 +165,7 @@ p {
 }
 
 /*Estilo de carousel*/
+
 .carousel-caption  { 
     background-color: #f5f5f78a;
     max-width: 50%;
