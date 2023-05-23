@@ -246,10 +246,10 @@ footer {
     background-color: #212121;
     color: #ffffff;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     top: 0;
     font-size: smaller;
-    margin-top: 20px;
+    margin-top: 5px;
     overflow: visible;
     text-align: center;
   }

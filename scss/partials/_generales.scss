@@ -99,13 +99,14 @@ footer {   background-color: $color-letras;
     footer { background-color: $color-letras;
     color: $color-blanco;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     top: 0;
     font-size: smaller;
-    margin-top: 20px;
+    margin-top: 5px;
     overflow: visible;
     text-align: center;
 }}
+
 
 
 footer img{ width: 25px;}
